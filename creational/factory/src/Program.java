@@ -1,5 +1,5 @@
-import factories.CppDeveloperFactory;
 import factories.DeveloperFactory;
+import factories.CppDeveloperFactory;
 import factories.JavaDeveloperFactory;
 import factories.PhpDeveloperFactory;
 import models.Developer;
@@ -10,7 +10,7 @@ import models.Developer;
  */
 public class Program {
     public static void main(String[] args) {
-        DeveloperFactory developerFactory = createDeveloperBySpecialty("c++");
+        DeveloperFactory developerFactory = createDeveloperBySpecialty("java");
         Developer developer = developerFactory.createDeveloper();
 
         developer.writeCode();
